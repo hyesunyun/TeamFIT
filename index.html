@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TeamFIT</title>
+  <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1"/>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> 
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  <script>
+  $(document).on('swipeleft', '#welcome1, #welcome2, #welcome3', function(event){    
+    if(event.handled !== true) // This will prevent event triggering more then once
+    {    
+      var nextpage = $.mobile.activePage.next('[data-role="page"]');
+        // swipe using id of next page if exists
+        if (nextpage.length > 0) {
+          $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+        }
+        event.handled = true;
+      }
+      return false;         
+    });
+
+  $(document).on('swiperight', '#welcome2, #welcome3, #welcome4', function(event){     
+    if(event.handled !== true) // This will prevent event triggering more then once
+    {      
+      var prevpage = $(this).prev('[data-role="page"]');
+      if (prevpage.length > 0) {
+        $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+      }
+      event.handled = true;
+    }
+    return false;            
+  });
+  </script>
+  <script src="circle-progress/js/jquery.circle-diagram.js"></script>
+  <script src="circle-progress/js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- ****************** LOGIN PAGE  *************************************--> 
+  <div data-role="page" id="login" data-theme="d">
+
+    <h1>TeamFit</h1>
+
+    <input type="text" name="username" id="username" placeholder="Username">
+    <input type="text" name="password" id="password" placeholder="Password">
+
+    <a href="#welcome1" data-role="button">Login</a>
+    <a href="#tbd" data-role="button">Register</a>
+
+  </div>
+
+  <!-- ****************** WELCOME PAGES ************************************** -->
+  <div data-role="page" id="welcome1" data-theme="d">
+
+    <h1 style="text-align:center">Welcome!</h1>
+
+    <div class="welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
+    width: 200px; height: 250px; margin:30px">
+
+    <div class="welcomeicon" style="text-align:center">
+      <i class="fa fa-bullseye fa-5x"></i>
+    </div>
+
+    <p>Use TeamFit to accomplish your goals. See your weekly goals, and 
+     select the goal you're going to complete today.</p>
+
+   </div>
+
+ </div>
+
+ <div data-role="page" id="welcome2" data-theme="d">
+
+  <h1 style="text-align:center">Welcome!</h1>
+
+
+  <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
+  width: 200px; height: 250px; margin:30px">
+
+  <div class="welcomeicon" style="text-align:center">
+    <i class="fa fa-check-square-o fa-5x"></i>
+  </div>
+
+  <p>Use checkboxes to keep track of the tasks you've completed as you 
+    work to complete your goal. </p>
+  </div>
+
+</div>
+
+<div data-role="page" id="welcome3" data-theme="d">
+
+  <h1 style="text-align:center">Welcome!</h1>
+
+
+  <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
+  width: 200px; height:250px; margin:30px">
+
+  <div class="welcomeicon" style="text-align:center">
+    <i class="fa fa-smile-o fa-5x"></i>
+  </div>
+  <p>Tell TeamFIT how you felt while completing your goals, and check out your profile
+   to see your stats as compared to your teammates. </p>
+ </div>
+</div>
+
+<div data-role="page" id="welcome4" data-theme="d">
+
+  <h1 style="text-align:center">Welcome!</h1>
+
+  <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
+  width: 200px; height: 250px; margin:30px">
+
+  <div class="welcomeicon" style="text-align:center">
+    <i class="fa fa-star-o fa-5x"></i>    
+  </div>
+
+  <p>Be on the lookout for tasks that earn you TeamFUEL points! Track your team's progress as you
+    move towards your goals.  </p>
+  </div>
+
+  <a href="#progress" data-role="button">Continue</a>
+
+</div>
+<!-- *********************** END WELCOME PAGES *********************************-->>
+
+
+
+<div data-role="page" id="progress" data-theme="d">
+
+  <h1 style="text-align:center">Hi, Vivienne</h1>
+  <p>team summary</p>
+
+  <div
+  id="diagram-id-1"
+  class="diagram"
+  data-circle-diagram='{
+  "percent": "48%",
+  "size": "100",
+  "borderWidth": "4",
+  "bgFill": "#cacaca",
+  "frFill": "#80d03c",
+  "textSize": "30",
+  "textColor": "#585858"
+}'>
+</div>
+
+<p>team completes leaderboard</p>
+
+<i class="fa fa-user fa-3x"></i>
+<i class="fa fa-user fa-3x"></i>
+<i class="fa fa-user fa-3x"></i>
+
+<a href="#goals" data-role="button">Continue</a>
+
+</div>
+
+<div data-role="page" id="goals" data-theme="d">
+
+  <div data-role="header" data-position="inline"> 
+    <h1>Goals of the Week</h1> 
+  </div> 
+
+  <div id="headericons" style="border: 1px solid #000000; text-align:center">
+    <div style="width: 33%; display:inline-block">
+      <i class="fa fa-clock-o fa-3x"></i> 
+      <p>60 minutes</p>
+    </div>
+    <div style="float: left; width: 33%; text-align:center"> 
+      <i class="fa fa-clock-o fa-3x"></i> 
+      <h1 style="text-style:bold">4 tasks</h1> 
+    </div>
+    <div style="float: left; width: 33%; text-align:center">
+     <i class="fa fa-star-o fa-3x"> </i> 
+     <p>100</p>  
+   </div>
+ </div>
+ 
+
+ <div role="main" class="ui-content">
+  <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+  <p><a href="#welcome" data-role="button" data-icon="home">Back to welcome page</a></p>
+</div><!-- /content -->
+
+
+<div data-role="footer" data-position="fixed">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
+      <li><a href="#"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
+      <li><a href="#"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
+      <li><a href="#"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
+
+    </ul>
+  </div><!-- /navbar -->
+</div><!-- /footer -->
+
+</div>
+
+
+
+</body>
+</html>

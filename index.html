@@ -36,6 +36,14 @@
   <script src="libs/circle-progress/js/jquery.circle-diagram.js"></script>
   <script src="libs/circle-progress/js/main.js"></script>
   <script type="text/javascript" src="libs/slim-scroll/jquery.slimscroll.min.js"></script>
+  <script>
+  $(function(){
+    $('#goal-list').slimScroll({
+      alwaysVisible: true,
+      height: '360px'
+    });
+  });
+  </script>
 </head>
 
 <body>
@@ -157,14 +165,16 @@
 
 </div>
 
+
+<!--***************************GOALS PAGE ***************************************-->
+
 <div data-role="page" id="goals" data-theme="d">
 
-  <div style="border: 1px solid #000000; text-align:center"> 
+  <div style="border-bottom: 1px solid #000000; text-align:center"> 
     <p>Goals of the Week</p> 
   </div> 
 
-  <div style="border: 1px solid #000000; padding-top:10px; text-align:center">
-
+  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center">
     <div style="width:100px; display:inline-block">
       <i class="fa fa-clock-o fa-2x"></i> 
       <p>60 minutes</p>
@@ -181,19 +191,122 @@
    </div>
 
  </div>
- 
 
- <div role="main" class="ui-content">
-  <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-  <p><a href="#welcome" data-role="button" data-icon="home">Back to welcome page</a></p>
-</div><!-- /content -->
+
+ 
+ <div id="goal-list" role="content" class="ui-content">
+  <p>Goal 1</p>
+  <div width="80%" height="80%" style="border:1px solid #000000; text-align:center; padding-top:10px; padding-bottom:10px">
+    <div style="width:80px; display:inline-block">
+      <i class="fa fa-clock-o fa-2x"></i> 
+      <p>60 minutes</p>
+    </div>
+
+    <div style="width:80px; display:inline-block"> 
+      <i class="fa fa-list-alt fa-2x"></i>
+      <p>4 tasks</p> 
+    </div>
+
+    <div style="width:80px; display:inline-block"> 
+     <i class="fa fa-star-o fa-2x"> </i> 
+     <p>100</p>  
+   </div>
+
+   <table width="80%" style="margin: auto" border="2" height ="80%" align="top">
+     <tr>
+       <td>Task 1</td>
+     </tr>
+     <tr>
+       <td>Task 2</td>
+     </tr>
+     <tr>
+       <td>Task 3</td>
+     </tr>
+   </table>
+
+   <p><a href="#tbd" data-role="button" style="width:70%; margin:auto">Start Goal</a></p>
+
+
+ </div>
+
+ <p>Goal 2</p>
+ <div width="80%" height="80%" style="border:1px solid #000000; text-align:center; padding-top:10px; padding-bottom:10px">
+  <div style="width:80px; display:inline-block">
+    <i class="fa fa-clock-o fa-2x"></i> 
+    <p>60 minutes</p>
+  </div>
+
+  <div style="width:80px; display:inline-block"> 
+    <i class="fa fa-list-alt fa-2x"></i>
+    <p>4 tasks</p> 
+  </div>
+
+  <div style="width:80px; display:inline-block"> 
+   <i class="fa fa-star-o fa-2x"> </i> 
+   <p>100</p>  
+ </div>
+
+ <table width="80%" style="margin: auto" border="2" height ="80%" align="top">
+   <tr>
+     <td>Task 1</td>
+   </tr>
+   <tr>
+     <td>Task 2</td>
+   </tr>
+   <tr>
+     <td>Task 3</td>
+   </tr>
+ </table>
+
+ <p><a href="#tbd" data-role="button" style="width:70%; margin:auto">Start Goal</a></p>
+
+
+</div>
+
+<p>Goal 3</p>
+<div width="80%" height="80%" style="border:1px solid #000000; text-align:center; padding-top:10px; padding-bottom:10px">
+  <div style="width:80px; display:inline-block">
+    <i class="fa fa-clock-o fa-2x"></i> 
+    <p>60 minutes</p>
+  </div>
+
+  <div style="width:80px; display:inline-block"> 
+    <i class="fa fa-list-alt fa-2x"></i>
+    <p>4 tasks</p> 
+  </div>
+
+  <div style="width:80px; display:inline-block"> 
+   <i class="fa fa-star-o fa-2x"> </i> 
+   <p>100</p>  
+ </div>
+
+ <table width="80%" style="margin: auto" border="2" height ="80%" align="top">
+   <tr>
+     <td>Task 1</td>
+   </tr>
+   <tr>
+     <td>Task 2</td>
+   </tr>
+   <tr>
+     <td>Task 3</td>
+   </tr>
+ </table>
+
+ <p><a href="#tbd" data-role="button" style="width:70%; margin:auto">Start Goal</a></p>
+
+
+</div>
+
+
+</div>
+
 
 
 <div data-role="footer" data-position="fixed">    
   <div data-role="navbar">
     <ul>
-      <li><a href="#"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
-      <li><a href="#"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
+      <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
+      <li><a href="#mystats"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
       <li><a href="#"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
       <li><a href="#"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
 
@@ -203,6 +316,52 @@
 
 </div>
 
+
+<!--***************************MY STATS PAGE ***************************************-->
+
+<div data-role="page" id="mystats" data-theme="d">
+
+  <div style="border-bottom: 1px solid #000000; text-align:center"> 
+    <p>My Stats</p> 
+  </div> 
+
+  <div style="text-align:center; padding-top:20px">
+  <i class="fa fa-user fa-5x"></i>
+</div>
+
+ <div style="border-bottom: 1px solid #000000; padding-top:30px; text-align:center">
+    <div style="width:100px; display:inline-block">
+      <i class="fa fa-circle-o-notch fa-2x"></i>
+      <p>90% complete</p>
+    </div>
+
+    <div style="width:100px; display:inline-block"> 
+      <i class="fa fa-shield fa-2x"></i>
+      <p>4 tasks</p> 
+    </div>
+
+    <div style="width:100px; display:inline-block"> 
+     <i class="fa fa-star-o fa-2x"> </i> 
+     <p>100</p>  
+   </div>
+
+ </div>
+  
+
+
+<div data-role="footer" data-position="fixed">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
+      <li><a href="#"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
+      <li><a href="#"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
+      <li><a href="#"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
+
+    </ul>
+  </div><!-- /navbar -->
+</div><!-- /footer -->
+
+</div>
 
 
 </body>

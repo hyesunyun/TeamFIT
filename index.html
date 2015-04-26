@@ -51,13 +51,17 @@
   <!-- ****************** LOGIN PAGE  *************************************--> 
   <div data-role="page" id="login" data-theme="d">
 
-    <h1>TeamFit</h1>
+    <h1 style="text-align:center; margin-top:100px">TeamFit</h1>
 
-    <input type="text" name="username" id="username" placeholder="Username">
-    <input type="text" name="password" id="password" placeholder="Password">
+    <div style="width:60%; margin:auto; margin-top:30px">
+      <input type="text" name="username" id="username" placeholder="Username">
+      <input type="text" name="password" id="password" placeholder="Password">
+    </div>
 
-    <a href="#welcome1" data-role="button">Login</a>
-    <a href="#tbd" data-role="button">Register</a>
+    <div style="width:60%; margin:auto; margin-top:50px">
+      <a href="#welcome1" data-role="button">Login</a>
+      <a href="#tbd" data-role="button">Register</a>
+    </div>
 
   </div>
 
@@ -67,7 +71,7 @@
     <h1 style="text-align:center">Welcome!</h1>
 
     <div class="welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-    width: 200px; height: 250px; margin:30px">
+    width: 200px; height: 300px; margin:30px">
 
     <div class="welcomeicon" style="text-align:center">
       <i class="fa fa-bullseye fa-5x"></i>
@@ -76,6 +80,7 @@
     <p>Use TeamFit to accomplish your goals. See your weekly goals, and 
      select the goal you're going to complete today.</p>
 
+     <img src="img/page1.png" alt="pageone" style="width:100px; height:20px; margin-left:40px; margin-top:40px">
    </div>
 
  </div>
@@ -86,7 +91,7 @@
 
 
   <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-  width: 200px; height: 250px; margin:30px">
+  width: 200px; height: 300px; margin:30px">
 
   <div class="welcomeicon" style="text-align:center">
     <i class="fa fa-check-square-o fa-5x"></i>
@@ -94,7 +99,12 @@
 
   <p>Use checkboxes to keep track of the tasks you've completed as you 
     work to complete your goal. </p>
+
+  <img src="img/page2.png" alt="pagetwo" style="width:100px; height:20px; margin-left:40px; margin-top:60px">
+
+
   </div>
+
 
 </div>
 
@@ -104,14 +114,21 @@
 
 
   <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-  width: 200px; height:250px; margin:30px">
+  width: 200px; height:300px; margin:30px">
 
   <div class="welcomeicon" style="text-align:center">
     <i class="fa fa-smile-o fa-5x"></i>
   </div>
   <p>Tell TeamFIT how you felt while completing your goals, and check out your profile
    to see your stats as compared to your teammates. </p>
+
+     <img src="img/page3.png" alt="pagethree" style="width:100px; height:20px; margin-left:40px; margin-top:30px">
+
+
  </div>
+
+
+
 </div>
 
 <div data-role="page" id="welcome4" data-theme="d">
@@ -119,7 +136,7 @@
   <h1 style="text-align:center">Welcome!</h1>
 
   <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-  width: 200px; height: 250px; margin:30px">
+  width: 200px; height: 300px; margin:30px">
 
   <div class="welcomeicon" style="text-align:center">
     <i class="fa fa-star-o fa-5x"></i>    
@@ -127,9 +144,13 @@
 
   <p>Be on the lookout for tasks that earn you TeamFUEL points! Track your team's progress as you
     move towards your goals.  </p>
+    
+
+     <img src="img/page4.png" alt="pagefour" style="width:100px; height:20px; margin-left:40px; margin-top:40px">
+
   </div>
 
-  <a href="#progress" data-role="button">Continue</a>
+  <a href="#progress" data-role="button" style="width:70%; margin:auto">Continue</a>
 
 </div>
 <!-- *********************** END WELCOME PAGES *********************************-->
@@ -139,9 +160,10 @@
 <div data-role="page" id="progress" data-theme="d">
 
   <h1 style="text-align:center">Hi, Vivienne</h1>
-  <p>team summary</p>
 
-  <div
+  <p style="margin-left:10px">team summary</p>
+
+  <div style="margin:auto"
   id="diagram-id-1"
   class="diagram"
   data-circle-diagram='{
@@ -155,13 +177,21 @@
 }'>
 </div>
 
-<p>team completes leaderboard</p>
+<p style="margin-left:10px">team completes leaderboard</p>
 
-<i class="fa fa-user fa-3x"></i>
-<i class="fa fa-user fa-3x"></i>
-<i class="fa fa-user fa-3x"></i>
+<div style="text-align:center; margin-top:40px">
+  <div style="width:90px; display:inline-block">
+    <i class="fa fa-user fa-3x"></i> 
+  </div> 
+  <div style="width:90px; display:inline-block">
+    <i class="fa fa-user fa-3x"></i> 
+  </div>
+  <div style="width:90px; display:inline-block">
+    <i class="fa fa-user fa-3x"></i> 
+  </div>
+</div>
 
-<a href="#goals" data-role="button">Continue</a>
+<a href="#goals" data-role="button" style="width:70%; margin-left:30px; margin-top:60px">Continue</a>
 
 </div>
 
@@ -307,8 +337,8 @@
     <ul>
       <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
       <li><a href="#mystats"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
-      <li><a href="#"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
-      <li><a href="#"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
+      <li><a href="#teamstats"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
+      <li><a href="#settings"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
 
     </ul>
   </div><!-- /navbar -->
@@ -358,9 +388,111 @@
   <div data-role="navbar">
     <ul>
       <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
-      <li><a href="#"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
-      <li><a href="#"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
-      <li><a href="#"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
+      <li><a href="#mystats"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
+      <li><a href="#teamstats"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
+      <li><a href="#settings"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
+
+    </ul>
+  </div><!-- /navbar -->
+</div><!-- /footer -->
+
+</div>
+
+<!--*************************** TEAM STATS PAGE ***************************************-->
+
+<div data-role="page" id="teamstats" data-theme="d">
+
+  <div style="border-bottom: 1px solid #000000; text-align:center"> 
+    <p>Team Stats</p> 
+  </div> 
+
+ <div style="border-bottom: 1px solid #000000; padding-top:30px; text-align:center">
+    <div style="width:110px; display:inline-block">
+      <i class="fa fa-circle-o-notch fa-2x"></i>
+      <p>90% completes</p>
+    </div>
+
+    <div style="width:90px; display:inline-block"> 
+      <i class="fa fa-smile-o fa-2x"></i>
+      <p>satisfaction</p> 
+    </div>
+
+    <div style="width:90px; display:inline-block"> 
+     <i class="fa fa-star-o fa-2x"> </i> 
+     <p>10,000</p>  
+   </div>
+
+ </div>
+
+ <div style="text-align:center">
+  <p>weekly completes</p>
+  <img src="img/graph.png" alt="graph" style="width:270px;height:160px">
+  <p>completes leaderboard</p>
+  <div style="width:90px; display:inline-block">
+    <i class="fa fa-user fa-3x"></i> 
+  </div> 
+  <div style="width:90px; display:inline-block">
+    <i class="fa fa-user fa-3x"></i> 
+  </div>
+  <div style="width:90px; display:inline-block">
+    <i class="fa fa-user fa-3x"></i> 
+  </div>
+
+</div>
+  
+
+
+<div data-role="footer" data-position="fixed">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
+      <li><a href="#mystats"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
+      <li><a href="#teamstats"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
+      <li><a href="#settings"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
+
+    </ul>
+  </div><!-- /navbar -->
+</div><!-- /footer -->
+
+</div>
+
+<!--*************************** SETTINGS PAGE ***************************************-->
+
+<div data-role="page" id="settings" data-theme="d">
+
+  <div style="border-bottom: 1px solid #000000; text-align:center"> 
+    <p>Settings</p> 
+  </div> 
+
+<div style="padding-left:10px; padding-top:10px">
+  <div style="width:90px; display:inline-block">
+    <i class="fa fa-user fa-5x"></i> 
+  </div>
+  <div style="display:inline-block">
+    <input type="text" name="username" id="username" placeholder="Username" style="width:50%">
+    <input type="text" name="password" id="password" placeholder="Password" style="width:50%">
+  </div>
+</div>
+
+<p><a href="#tbd" data-role="button" style="width:30%; margin-left:170px">Edit</a></p>
+  
+<p style="margin-top:30px"><a href="#tbd" data-role="button" style="width:80%; margin:auto">Add a goal</a></p>
+<p><a href="#tbd" data-role="button" style="width:80%; margin:auto">Questions?</a></p>
+
+
+<p style="margin-top:70px"><a href="#tbd" data-role="button" style="width:80%; margin:auto">Clear Data</a></p>
+
+ 
+  
+
+
+<div data-role="footer" data-position="fixed">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
+      <li><a href="#mystats"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
+      <li><a href="#teamstats"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
+      <li><a href="#settings"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
 
     </ul>
   </div><!-- /navbar -->

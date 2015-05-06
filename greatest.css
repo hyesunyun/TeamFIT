@@ -1,0 +1,41 @@
+.ui-page {
+    background-color: #D1FFF0;
+}
+
+h1 {
+	font-size: 45px;
+	font-style: Arial;
+}
+
+a {
+	color: #000000;
+}
+
+p{
+	font-style: Arial;
+}
+
+.black {
+	color: black;
+}
+
+.green {
+color:#02e198;
+
+}
+
+.word {
+	font-family: Helvetica;
+	text-shadow:3px 3px #bcbdc1;
+}
+
+#button {
+	color:white !important;
+}
+
+#collapsible {
+	background-color:#94f9d8
+}
+
+
+

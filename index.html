@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1"/>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> 
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="greatest.css"/>
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
   <script>
@@ -49,9 +50,9 @@
 <body>
 
   <!-- ****************** LOGIN PAGE  *************************************--> 
-  <div data-role="page" id="login" data-theme="d">
+  <div data-role="page" id="login" data-theme="d"> 
 
-    <h1 style="text-align:center; margin-top:100px">TeamFit</h1>
+    <h1 style="text-align:center; margin-top:100px"><span class="black word">Team</span><span class="green word">Fit</span></h1>
 
     <div style="width:60%; margin:auto; margin-top:30px">
       <input type="text" name="username" id="username" placeholder="Username">
@@ -59,8 +60,8 @@
     </div>
 
     <div style="width:60%; margin:auto; margin-top:50px">
-      <a href="#welcome1" data-role="button">Login</a>
-      <a href="#tbd" data-role="button">Register</a>
+      <a id="button" href="#welcome1" data-role="button" style="background-color:#029CFC; border-style:none">Login</a>
+      <a id="button" href="#tbd" data-role="button" style="background-color:#029CFC; border-style:none">Register</a>
     </div>
 
   </div>
@@ -71,7 +72,7 @@
     <h1 style="text-align:center">Welcome!</h1>
 
     <div class="welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-    width: 200px; height: 300px; margin:40px">
+    width: 200px; height: 300px; margin:auto; margin-bottom: 30px">
 
     <div class="welcomeicon" style="text-align:center">
       <i class="fa fa-bullseye fa-5x"></i>
@@ -80,7 +81,7 @@
     <p>Use TeamFit to accomplish your goals. See your weekly goals, and 
      select the goal you're going to complete today.</p>
 
-     <img src="img/page1.png" alt="pageone" style="width:100px; height:20px; margin-left:40px; margin-top:40px">
+     <img src="img/page1.png" alt="pageone" style="width:100px; height:20px; margin-left:50px; margin-top:40px">
    </div>
 
  </div>
@@ -91,7 +92,7 @@
 
 
   <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-  width: 200px; height: 300px; margin:40px">
+  width: 200px; height: 300px; margin:auto; margin-bottom: 30px">
 
   <div class="welcomeicon" style="text-align:center">
     <i class="fa fa-check-square-o fa-5x"></i>
@@ -100,7 +101,7 @@
   <p>Use checkboxes to keep track of the tasks you've completed as you 
     work to complete your goal. </p>
 
-    <img src="img/page2.png" alt="pagetwo" style="width:100px; height:20px; margin-left:40px; margin-top:60px">
+    <img src="img/page2.png" alt="pagetwo" style="width:100px; height:20px; margin-left:50px; margin-top:60px">
 
 
   </div>
@@ -114,7 +115,7 @@
 
 
   <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-  width: 200px; height:300px; margin:40px">
+  width: 200px; height:300px; margin:auto; margin-bottom: 30px">
 
   <div class="welcomeicon" style="text-align:center">
     <i class="fa fa-smile-o fa-5x"></i>
@@ -122,7 +123,7 @@
   <p>Tell TeamFIT how you felt while completing your goals, and check out your profile
    to see your stats as compared to your teammates. </p>
 
-   <img src="img/page3.png" alt="pagethree" style="width:100px; height:20px; margin-left:40px; margin-top:30px">
+   <img src="img/page3.png" alt="pagethree" style="width:100px; height:20px; margin-left:50px; margin-top:30px">
 
 
  </div>
@@ -136,7 +137,7 @@
   <h1 style="text-align:center">Welcome!</h1>
 
   <div class="#welcomebox" style="border-radius: 25px; border: 2px solid #000000; padding: 20px; 
-  width: 200px; height: 300px; margin:40px">
+  width: 200px; height: 300px; margin:auto; margin-bottom: 30px">
 
   <div class="welcomeicon" style="text-align:center">
     <i class="fa fa-star-o fa-5x"></i>    
@@ -150,7 +151,7 @@
 
   </div>
 
-  <a href="#progress" data-role="button" style="width:70%; margin:auto">Continue</a>
+  <a id="button" href="#progress" data-role="button" style="width:70%; margin:auto; background-color:#029CFC; border-style:none">Continue</a>
 
 </div>
 <!-- *********************** END WELCOME PAGES *********************************-->
@@ -161,7 +162,7 @@
 
   <h1 style="text-align:center">Hi, Vivienne</h1>
 
-  <p style="margin-left:10px">team summary</p>
+  <p style="margin-left:10px;text-align:center">team summary</p>
 
   <div style="margin:auto"
   id="diagram-id-1"
@@ -177,34 +178,37 @@
 }'>
 </div>
 
-<p style="margin-left:10px">team completes leaderboard</p>
+<p style="margin-left:10px; padding-top: 15px; text-align:center">team leaderboard</p>
 
-<div style="text-align:center; margin-top:40px">
+<div style="text-align:center; margin-top:30px">
   <div style="width:90px; display:inline-block">
     <i class="fa fa-user fa-3x"></i> 
+    <p>Vivienne</p>
   </div> 
   <div style="width:90px; display:inline-block">
     <i class="fa fa-user fa-3x"></i> 
+    <p>Tom Brady</p>
   </div>
   <div style="width:90px; display:inline-block">
     <i class="fa fa-user fa-3x"></i> 
+    <p>Usain Bolt</p>
   </div>
 </div>
 
-<a href="#goals" data-role="button" style="width:70%; margin-left:30px; margin-top:60px">Continue</a>
+<a id="button" href="#goals" data-role="button" style="width:70%; margin-left:auto; margin-right:auto; margin-top:60px; background-color:#029CFC;border-style:none">Continue</a>
 
 </div>
 
 
-<!--***************************GOALS PAGE ***************************************-->
+<!--*************************** GOALS PAGE ***************************************-->
 
 <div data-role="page" id="goals" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>Goals of the Week</p> 
+  <div style="text-align:center; font-size: 20px; background-color:#94f9d8; padding:1px"> 
+    <h4>Goals of the Week</h4> 
   </div> 
 
-  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center">
+  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center; background-color:#94f9d8">
     <div style="width:100px; display:inline-block">
       <i class="fa fa-clock-o fa-2x"></i> 
       <p>60 minutes</p>
@@ -225,7 +229,7 @@
 
  
  <div id="goal-list" role="content" class="ui-content">
-  <p>Goal 1</p>
+  <p style="font-size:18px; font-weight:bold; margin-bottom:3px">Goal 1</p>
   <div width="80%" height="80%" style="border:1px solid #000000; text-align:center; padding-top:10px; padding-bottom:10px">
     <div style="width:80px; display:inline-block">
       <i class="fa fa-clock-o fa-2x"></i> 
@@ -242,8 +246,8 @@
      <p>100</p>  
    </div>
 
-   <div style="padding:10px">
-     <div data-role="collapsible" >
+   <div id="collapsible" style="padding:10px">
+     <div data-role="collapsible">
       <h3>Ladders</h3>
       <p>Ankle hops, 90 degree turns, 1 foot shuffle, hopscotch 2 feet.</p>
     </div>
@@ -258,12 +262,12 @@
   </div>
 
 
-  <p><a href="#todaysgoal1" data-role="button" style="width:70%; margin:auto">Start Goal</a></p>
+  <p><a id="button" href="#todaysgoal1" data-role="button" style="width:70%; margin:auto; border-style:none; background-color:#ee2a2a">Start Goal</a></p>
 
 
 </div>
 
-<p>Goal 2</p>
+<p style="font-size:18px; font-weight:bold; margin-bottom:3px">Goal 2</p>
 <div width="80%" height="80%" style="border:1px solid #000000; text-align:center; padding-top:10px; padding-bottom:10px">
   <div style="width:80px; display:inline-block">
     <i class="fa fa-clock-o fa-2x"></i> 
@@ -280,7 +284,7 @@
    <p>100</p>  
  </div>
 
- <div style="padding:10px">
+ <div id="collapsible" style="padding:10px">
    <div data-role="collapsible" >
     <h3>Core Circuit</h3>
     <p>Plank, side plank, heel taps, half jacks, and full jacks.</p>
@@ -291,12 +295,12 @@
   </div>
 </div>
 
-<p><a href="#todaysgoal2" data-role="button" style="width:70%; margin:auto">Start Goal</a></p>
+<p><a id="button" href="#todaysgoal2" data-role="button" style="width:70%; margin:auto;border-style:none; background-color:#ee2a2a">Start Goal</a></p>
 
 
 </div>
 
-<p>Goal 3</p>
+<p style="font-size:18px; font-weight:bold; margin-bottom:3px">Goal 3</p>
 <div width="80%" height="80%" style="border:1px solid #000000; text-align:center; padding-top:10px; padding-bottom:10px">
   <div style="width:80px; display:inline-block">
     <i class="fa fa-clock-o fa-2x"></i> 
@@ -313,7 +317,7 @@
    <p>100</p>  
  </div>
 
-   <div style="padding:10px">
+   <div id="collapsible" style="padding:10px">
      <div data-role="collapsible" >
       <h3>Agility Exercises</h3>
       <p>S pattern drill, X pattern drill.</p>
@@ -328,7 +332,7 @@
     </div>
   </div>
 
- <p><a href="#todaysgoal3" data-role="button" style="width:70%; margin:auto">Start Goal</a></p>
+ <p><a id="button" href="#todaysgoal3" data-role="button" style="width:70%; margin:auto; border-style:none; background-color:#ee2a2a">Start Goal</a></p>
 
 
 </div>
@@ -338,7 +342,7 @@
 
 
 
-<div data-role="footer" data-position="fixed">    
+<div data-role="footer" data-position="fixed" style="background-color:#94f9d8">    
   <div data-role="navbar">
     <ul>
       <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
@@ -357,8 +361,8 @@
 
 <div data-role="page" id="mystats" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>My Stats</p> 
+  <div style="border-bottom: 1px solid #000000; text-align:center;background-color:#94f9d8; padding:1px; font-size: 20px"> 
+    <h4>My Stats</h4> 
   </div> 
 
   <div style="text-align:center; padding-top:20px">
@@ -384,13 +388,13 @@
  </div>
 
  <div style="text-align:center">
-  <p>weekly completes</p>
+  <p>weekly completion</p>
   <img src="img/graph.png" alt="graph" style="width:270px;height:160px">
 </div>
 
 
 
-<div data-role="footer" data-position="fixed">    
+<div data-role="footer" data-position="fixed" style="background-color:#94f9d8">    
   <div data-role="navbar">
     <ul>
       <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
@@ -408,8 +412,8 @@
 
 <div data-role="page" id="teamstats" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>Team Stats</p> 
+  <div style="border-bottom: 1px solid #000000; text-align:center;background-color:#94f9d8; padding:1px; font-size: 20px"> 
+    <h4>Team Stats</h4> 
   </div> 
 
   <div style="border-bottom: 1px solid #000000; padding-top:30px; text-align:center">
@@ -431,24 +435,27 @@
  </div>
 
  <div style="text-align:center">
-  <p>weekly completes</p>
+  <p>weekly completion</p>
   <img src="img/graph.png" alt="graph" style="width:270px;height:160px">
-  <p>completes leaderboard</p>
+  <p>team leaderboard</p>
   <div style="width:90px; display:inline-block">
     <i class="fa fa-user fa-3x"></i> 
+    <p>Vivienne</p>
   </div> 
   <div style="width:90px; display:inline-block">
     <i class="fa fa-user fa-3x"></i> 
+    <p>Tom Brady</p>
   </div>
   <div style="width:90px; display:inline-block">
     <i class="fa fa-user fa-3x"></i> 
+    <p>Usain Bolt</p>
   </div>
 
 </div>
 
 
 
-<div data-role="footer" data-position="fixed">    
+<div data-role="footer" data-position="fixed" style="background-color:#94f9d8">    
   <div data-role="navbar">
     <ul>
       <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
@@ -466,8 +473,8 @@
 
 <div data-role="page" id="settings" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>Settings</p> 
+  <div style="border-bottom: 1px solid #000000; text-align:center; background-color:#94f9d8; padding:1px; font-size: 20px"> 
+    <h4>Settings</h4> 
   </div> 
 
   <div style="padding-left:10px; padding-top:10px">
@@ -480,19 +487,19 @@
     </div>
   </div>
 
-  <p><a href="#tbd" data-role="button" style="width:30%; margin-left:170px">Edit</a></p>
+  <p><a id="button" href="#tbd" data-role="button" style="width:30%; margin-left:170px; border-style:none; background-color:#029CFC">Edit</a></p>
   
-  <p style="margin-top:30px"><a href="#tbd" data-role="button" style="width:80%; margin:auto">Add a goal</a></p>
-  <p><a href="#tbd" data-role="button" style="width:80%; margin:auto">Questions?</a></p>
+  <p style="margin-top:30px"><a id="button" href="#addgoals" data-role="button" style="width:80%; margin:auto;border-style:none; background-color:#029CFC">Add a goal</a></p>
+  <p><a id="button" href="#tbd" data-role="button" style="width:80%; margin:auto;border-style:none; background-color:#029CFC">Questions?</a></p>
 
 
-  <p style="margin-top:70px"><a href="#tbd" data-role="button" style="width:80%; margin:auto">Clear Data</a></p>
+  <p style="margin-top:70px"><a id="button" href="#tbd" data-role="button" style="width:80%; margin:auto;border-style:none; background-color:#ee2a2a">Clear Data</a></p>
 
 
   
 
 
-  <div data-role="footer" data-position="fixed">    
+  <div data-role="footer" data-position="fixed" style="background-color:#94f9d8">    
     <div data-role="navbar">
       <ul>
         <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
@@ -510,11 +517,11 @@
 
 <div data-role="page" id="todaysgoal1" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>Goal 1</p> 
+  <div style="text-align:center;background-color:#94f9d8; padding:1px; font-size: 20px"> 
+    <h4>Goal 1</h4> 
   </div> 
 
-  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center">
+  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center; background-color:#94f9d8">
     <div style="width:100px; display:inline-block">
       <i class="fa fa-clock-o fa-2x"></i> 
       <p>52 minutes</p>
@@ -533,36 +540,51 @@
  </div>
 
   <div id="goal-list" role="content" class="ui-content">
-    <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
-       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Ladders</h1>
+    <div width="80%" height="80%" style="border:1px solid #000000; padding:15px">
+       <input type="checkbox" name="goal1task1" id="goaltask1" style="width:100px; display:inline-block; margin-left:200px; margin-top:20px"/> 
+      <h2 style="display:inline-block">Ladders</h1>
      
-      <p>A description. Here's what you should do.</p>
+      <p>Do each exercise twice through.
+        <ul>
+        <li>Ankle hops</li>
+        <li>90 degree turns</li>
+        <li>1 foot shuffle</li>
+        <li>hopscotch 2 feet</li>
+      </ul></p>
     </div>
 
     <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
-       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Lifting</h1>
+       <input type="checkbox" name="goal1task2" id="goaltask2" style="width:100px; display:inline-block; margin-left:200px;margin-top:20px"/> 
+      <h2 style="display:inline-block">Lifting</h1>
      
-      <p>A description. Here's what you should do.</p>
+      <p>Do 3 sets of each exercise.
+        <ul>
+        <li>Front squat</li>
+        <li>chin-ups</li>
+        <li>lateral box jump</li>
+        <li>wall slides</li>
+      </ul></p>
     </div>
 
     <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
-       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Perimeter Run</h1>
+       <input type="checkbox" name="goal1task3" id="goaltask3" style="width:100px; display:inline-block; margin-left:200px;margin-top:20px"/> 
+      <h2 style="display:inline-block">Perimeter Run</h1>
      
-      <p>A description. Here's what you should do.</p>
+      <p>Soccer field perimeter sprint for 12 minutes.</p>
     </div>
 
-    <p><a href="#howditgo1" data-role="button" style="width:70%; margin:auto">Finish</a></p>
+  <p><a id="button" href="#goals" data-role="button" data-icon="delete" style="width:70%; margin:auto; border-style: none; background-color:#ee2a2a">Cancel</a></p>
+  <p><a id="finishgoals1" href="#howditgo1" data-role="button" data-icon="check" style="width:70%; margin:auto; border-style: none; background-color:#029CFC">Finish</a></p>
+ 
+ </div>
 
-  </div>
+
 </div>
 
 <div data-role="page" id="howditgo1" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>Log</p> 
+  <div style="border-bottom: 1px solid #000000; text-align:center; background-color:#94f9d8; padding:1px; font-size: 20px"> 
+    <h4>Log</h4> 
   </div> 
 
   <div style="padding:10px">
@@ -570,15 +592,15 @@
   <h1>How'd it go?</h1>
   <p>How'd you feel completing your tasks today?</p>
 
-<div style="text-align:center">
+<div data-role="button" style="text-align:center">
   <div style="width:90px; display:inline-block">
     <i class="fa fa-smile-o fa-3x"></i> 
-  </div> 
+  </div>
   <div style="width:90px; display:inline-block">
     <i class="fa fa-meh-o fa-3x"></i> 
   </div>
   <div style="width:90px; display:inline-block">
-    <i class="fa fa-frown-o fa-3x"></i> 
+<i class="fa fa-frown-o fa-3x"></i> 
   </div>
 </div>
 
@@ -587,7 +609,7 @@
   <input type="text" name="password" id="password" placeholder="minutes" >
 
 
-  <p><a href="#mystats" data-role="button" style="width:70%; margin:auto">Submit</a></p>
+  <p><a id="button" href="#mystats" data-role="button" style="width:70%; margin:auto; border-style: none; background-color:#029CFC">Submit</a></p>
 </div>
 
   </div>
@@ -596,11 +618,11 @@
 
   <div data-role="page" id="todaysgoal2" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>Goal 1</p> 
+  <div style="text-align:center; background-color:#94f9d8; padding:1px; font-size: 20px"> 
+    <h4>Goal 2</h4> 
   </div> 
 
-  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center">
+  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center; background-color:#94f9d8">
     <div style="width:100px; display:inline-block">
       <i class="fa fa-clock-o fa-2x"></i> 
       <p>52 minutes</p>
@@ -620,21 +642,29 @@
 
   <div id="goal-list" role="content" class="ui-content">
     <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
-       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Core Circuit</h1>
+       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px;margin-top:20px"/> 
+      <h2 style="display:inline-block">Core Circuit</h1>
      
-      <p>A description. Here's what you should do.</p>
+     <p>Do each core exercise for 1 minute. Do 2 sets.
+        <ul>
+        <li>Plank</li>
+        <li>side plank</li>
+        <li>heel taps</li>
+        <li>half jacks</li>
+        <li>full jacks</li>
+      </ul></p>
     </div>
 
     <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
-       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Fartlek Run</h1>
+       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px; margin-top:20px"/> 
+      <h2 style="display:inline-block">Fartlek Run</h1>
      
-      <p>A description. Here's what you should do.</p>
+      <p>20 second sprint every 2 minutes for 20 minutes. Run a fast-paced jog when not sprinting.</p>
     </div>
 
-    <p><a href="#howditgo1" data-role="button" style="width:70%; margin:auto">Finish</a></p>
-
+  <p><a id="button" href="#goals" data-role="button" data-icon="delete" style="width:70%; margin:auto; border-style: none; background-color:#ee2a2a">Cancel</a></p>
+  <p><a id="button" href="#howditgo1" data-role="button"  data-icon="check" style="width:70%; margin:auto; border-style: none; background-color:#029CFC">Finish</a></p>
+ 
   </div>
 </div>
 
@@ -642,11 +672,11 @@
 
   <div data-role="page" id="todaysgoal3" data-theme="d">
 
-  <div style="border-bottom: 1px solid #000000; text-align:center"> 
-    <p>Goal 1</p> 
+  <div style="text-align:center; background-color:#94f9d8; padding:1px; font-size: 20px"> 
+    <h4>Goal 3</h4> 
   </div> 
 
-  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center">
+  <div style="border-bottom: 1px solid #000000; padding-top:10px; text-align:center; background-color:#94f9d8">
     <div style="width:100px; display:inline-block">
       <i class="fa fa-clock-o fa-2x"></i> 
       <p>52 minutes</p>
@@ -666,30 +696,151 @@
 
   <div id="goal-list" role="content" class="ui-content">
     <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
-       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Agility Exercises</h1>
+       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px; margin-top:20px"/> 
+      <h2 style="display:inline-block">Agility Exercises</h1>
      
-      <p>A description. Here's what you should do.</p>
+      <p>Do 3 sets of each drill.<br>
+        <ul>
+        <li>S pattern drill</li>
+        <li>X pattern drill</li>
+      </ul></p>
+    </div>
+
+    <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
+       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px; margin-top:20px"/> 
+      <h2 style="display:inline-block">Lifting</h1>
+     
+     <p>Do 2 sets of each exercise. Increase the weight for the second set.<br>
+        <ul>
+        <li>Bench press</li>
+        <li>pullups</li>
+        <li>hip lift hold</li>
+        <li>DB clock lunges</li>
+      </ul></p>
+
     </div>
 
     <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
        <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Lifting</h1>
+      <h2 style="display:inline-block">Speed Session</h1>
      
-      <p>A description. Here's what you should do.</p>
+      <p>Do 4 times.<br>60 yard course, with cones at 10, 20, 30, and 60 yards.</p>
     </div>
 
-    <div width="80%" height="80%" style="border:1px solid #000000; padding:10px">
-       <input type="checkbox" name="goal1task1" style="width:100px; display:inline-block; margin-left:200px"/> 
-      <h1 style="display:inline-block">Speed Session</h1>
-     
-      <p>A description. Here's what you should do.</p>
-    </div>
-
-    <p><a href="#howditgo1" data-role="button" style="width:70%; margin:auto">Finish</a></p>
-
+  <p><a id="button" href="#goals" data-role="button" data-icon="delete" style="width:70%; margin:auto;border-style: none; background-color:#ee2a2a">Cancel</a></p>
+  <p><a id="button" href="#howditgo1" data-role="button"  data-icon="check" style="width:70%; margin:auto; border-style: none; background-color:#029CFC">Finish</a></p>
+ 
   </div>
 </div>
+
+<!--*************************** ADD A GOAL PAGE ***************************************-->
+
+<div data-role="page" id="addgoals" data-theme="d">
+
+  <div style="text-align:center; font-size: 20px; background-color:#94f9d8; padding:1px"> 
+    <h4>Add a Goal</h4> 
+  </div> 
+
+<div role="content" class="ui-content">
+<div width="80%" height="80%" style="border:1px solid #000000; text-align:left; padding:5px;">
+  <i class="fa fa-users fa-2x" style="float:left; margin: 10px 25px 10px 10px"></i> 
+  <p style="font-weight:bold">TEAM</p>
+</div>
+</div>
+
+
+ <div id="goal-list" role="content" class="ui-content">
+
+  <!-- <div width="80%" height="80%" style="border:1px solid #000000; text-align:center; padding:0px"> -->
+
+<form action="tba" method="post">
+   <div id="collapsible2">
+     <div data-role="collapsible">
+      <h3>Number of Tasks</h3>
+       <!-- <p>How many tasks are required to complete this goal?</p> -->
+
+      <label for="select-choice-min" class="select">How many tasks are required to complete this goal?</label>
+<select name="select-choice-min" id="select-choice-min" data-mini="true">
+   <option value="one">1</option>
+   <option value="two">2</option>
+   <option value="three">3</option>
+   <option value="four">4</option>
+   <option value="five">5</option>
+   <option value="six">6</option>
+   <option value="seven">7</option>
+   <option value="eight">8</option>
+   <option value="nine">9</option>
+   <option value="ten">10</option>
+</select> 
+
+    </div>
+    <div data-role="collapsible" >
+      <h3>Describe Tasks</h3>
+      <div data-role="fieldcontain">
+    <label for="name">Task 1 Name:</label>
+    <input type="text" name="name" id="name" value=""  />
+</div>  
+
+<div data-role="fieldcontain">
+    <label for="name">Text 1 Description:</label>
+    <input type="text" name="name" id="name" value=""  />
+</div>  
+
+    
+    </div>
+    <div data-role="collapsible" >
+      <h3>Require Feedback?</h3>
+      <div data-role="fieldcontain">
+<label for="flip-2">Task 1:</label>
+  <select name="flip-2" id="flip-2" data-role="slider">
+    <option value="nope">Nope</option>
+    <option value="yep">Yep</option>
+  </select> 
+</div>
+      <div data-role="fieldcontain">
+<label for="flip-2">Task 2:</label>
+  <select name="flip-2" id="flip-2" data-role="slider">
+    <option value="nope">Nope</option>
+    <option value="yep">Yep</option>
+  </select> 
+</div>
+<div data-role="fieldcontain">
+<label for="flip-2">Task 3:</label>
+  <select name="flip-2" id="flip-2" data-role="slider">
+    <option value="nope">Nope</option>
+    <option value="yep">Yep</option>
+  </select> 
+</div>
+    </div>
+  </div>
+
+<!-- </div> -->
+
+</form>
+
+  <p><a id="button" href="#goals" data-role="button" style="width:70%; margin:auto; border-style:none; background-color:#ee2a2a">Submit</a></p>
+
+
+
+
+</div>
+
+
+
+<div data-role="footer" data-position="fixed" style="background-color:#94f9d8">    
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#goals"> <i class="fa fa-bullseye fa-2x"></i> <br>Goals </a></li>
+      <li><a href="#mystats"> <i class="fa fa-user fa-2x"></i> <br>Profile</a></li>
+      <li><a href="#teamstats"> <i class="fa fa-users fa-2x"></i> <br>Team</a></li>
+      <li><a href="#settings"> <i class="fa fa-cog fa-2x"></i> <br>Settings</a></li>
+
+    </ul>
+  </div><!-- /navbar -->
+</div><!-- /footer -->
+
+</div>
+
 
 </body>
 </html>

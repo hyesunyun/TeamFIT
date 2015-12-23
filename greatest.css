@@ -1,10 +1,15 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
 .ui-page {
-    background-color: #D1FFF0;
+    background-color: #FFFFFF;
 }
 
 h1 {
 	font-size: 45px;
-	font-style: Arial;
+	font-family: 'Raleway', sans-serif;
+	color: #7de0b0;
 }
 
 a {
@@ -12,21 +17,21 @@ a {
 }
 
 p{
-	font-style: Arial;
+	font-style: "Raleway";
+	color: #A8A8A8;
 }
 
 .black {
-	color: black;
+	color: #A8A8A8;
 }
 
 .green {
-color:#02e198;
+	color:#7de0b0;
 
 }
 
 .word {
-	font-family: Helvetica;
-	text-shadow:3px 3px #bcbdc1;
+	font-family: 'Raleway', sans-serif;
 }
 
 #button {
@@ -34,7 +39,11 @@ color:#02e198;
 }
 
 #collapsible {
-	background-color:#94f9d8
+	background-color:white;
+}
+
+body, input, select, textarea, button, .ui-btn {
+	font-family: 'Raleway', sans-serif;
 }
 
 
